@@ -67,7 +67,8 @@ export default function EqualsPage() {
           non-null object with an <strong>own property</strong> (not inherited)
           matching the key, using <code>Object.is</code> semantics for value
           comparison. A missing key never matches, even when the target is{' '}
-          <code>undefined</code>.
+          <code>undefined</code>. Null-prototype objects are supported as long
+          as the key is an own property.
         </Paragraph>
         <CodeBlock language='ts' code={sampleEqualsByAndKey} />
       </Stack>
